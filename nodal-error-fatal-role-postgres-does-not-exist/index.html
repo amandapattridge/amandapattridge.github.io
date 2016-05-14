@@ -1,0 +1,169 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Nodal error 'Fatal: role 'postgres' does not exist'</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=b41910d67c">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://localhost:2368/nodal-error-fatal-role-postgres-does-not-exist/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Amanda Pattridge">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Nodal error 'Fatal: role 'postgres' does not exist'">
+    <meta property="og:description" content="This error occurs because Nodal looks for a postgreSQL user named 'postgres'. The postgres.app automatically sets your username according to your account name, so you need to check if you have a user called postgres with database creation authorization. In psql, to view users: yourname=&amp;gt; \du If you">
+    <meta property="og:url" content="http://localhost:2368/nodal-error-fatal-role-postgres-does-not-exist/">
+    <meta property="article:published_time" content="2016-05-13T00:29:25.789Z">
+    <meta property="article:modified_time" content="2016-05-13T00:29:25.788Z">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Nodal error 'Fatal: role 'postgres' does not exist'">
+    <meta name="twitter:description" content="This error occurs because Nodal looks for a postgreSQL user named 'postgres'. The postgres.app automatically sets your username according to your account name, so you need to check if you have a user called postgres with database creation authorization. In psql, to view users: yourname=&amp;gt; \du If you">
+    <meta name="twitter:url" content="http://localhost:2368/nodal-error-fatal-role-postgres-does-not-exist/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Amanda Pattridge">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Amanda Pattridge",
+    "author": {
+        "@type": "Person",
+        "name": "Amanda Pattridge",
+        "image": "http://localhost:2368/content/images/2016/05/profile.jpg",
+        "url": "http://localhost:2368/author/amanda/"
+    },
+    "headline": "Nodal error &#x27;Fatal: role &#x27;postgres&#x27; does not exist&#x27;",
+    "url": "http://localhost:2368/nodal-error-fatal-role-postgres-does-not-exist/",
+    "datePublished": "2016-05-13T00:29:25.789Z",
+    "dateModified": "2016-05-13T00:29:25.788Z",
+    "description": "This error occurs because Nodal looks for a postgreSQL user named &#x27;postgres&#x27;. The postgres.app automatically sets your username according to your account name, so you need to check if you have a user called postgres with database creation authorization. In psql, to view users: yourname=&amp;gt; \\du If you"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Amanda Pattridge" href="http://localhost:2368/rss/">
+</head>
+<body class="post-template nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://localhost:2368/">Home</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="http://localhost:2368/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Nodal error 'Fatal: role 'postgres' does not exist'</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2016-05-12">12 May 2016</time> 
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>This error occurs because Nodal looks for a postgreSQL user named 'postgres'. The postgres.app automatically sets your username according to your account name, so you need to check if you have a user called postgres with database creation authorization.</p>
+
+<p>In psql, to view users:</p>
+
+<pre><code>yourname=&gt; \du
+</code></pre>
+
+<p>If you do not see a user with role name postgres and an attribute of Superuser, you'll need to create that user.</p>
+
+<pre><code>CREATE USER postgres SUPERUSER;
+</code></pre>
+
+<p>That's it!</p>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/amanda/" style="background-image: url(../content/images/2016/05/profile.jpg)"><span class="hidden">Amanda Pattridge's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/amanda/">Amanda Pattridge</a></h4>
+
+                    <p>Read <a href="../author/amanda/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Nodal%20error%20'Fatal%3A%20role%20'postgres'%20does%20not%20exist'&amp;url=http://localhost:2368/nodal-error-fatal-role-postgres-does-not-exist/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/nodal-error-fatal-role-postgres-does-not-exist/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/nodal-error-fatal-role-postgres-does-not-exist/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story prev no-cover" href="../welcome-to-ghost/">
+        <section class="post">
+            <h2>Welcome to Ghost</h2>
+            <p>You're live! Nice. We've put together a little post to introduce you to the Ghost editor and get you…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://localhost:2368">Amanda Pattridge</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=b41910d67c"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=b41910d67c"></script>
+
+</body>
